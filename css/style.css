@@ -1,0 +1,31 @@
+header{
+    background: brown;
+    color: orange;
+    padding: 30px;
+    text-align: center;
+    border: solid 2px black;
+}
+
+p{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* css comment */
+
+h1{
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    background: #444;
+    border: solid 2px black;
+}
+
+h2{
+    color: orange;
+    font-size: 25px;
+    text-align: center;
+    vertical-align: bottom;
+}
