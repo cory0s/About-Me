@@ -3,7 +3,7 @@ header{
     color: orange;
     padding: 30px;
     text-align: center;
-    border: solid 2px black;
+    border: solid 4px rgb(53, 5, 5);
 }
 
 p{
@@ -19,9 +19,25 @@ h1{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+ul{
+    width: 80%;
+    text-align: center;
+    margin: 0px auto 0px auto;
+}
+
+li{
+    display: inline-block;
+    margin: 20px 75px 20px 75px;
+    -moz-box-shadow: -5px -5px #777777;
+    -webkit-box-shadow: -5px -5px #777777;
+    box-shadow: -5px -5px #777777;
+    padding: 5px;
+}
+
 body{
     background: #444;
     border: solid 2px black;
+    background-image: url("img/Bikes.jpg");
 }
 
 h2{
@@ -29,4 +45,19 @@ h2{
     font-size: 25px;
     text-align: center;
     vertical-align: bottom;
+}
+
+nav{
+    text-transform: uppercase;
+    color: orange;
+    background-color: #444;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container{
+    margin: 20px;
+}
+
+span{
+    font-display: bold;
 }
