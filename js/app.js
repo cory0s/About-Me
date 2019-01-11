@@ -48,31 +48,32 @@ questionTres();
 
 
 //QUESTION 4
-
-var invention = prompt('Computers are human\'s greatest invention. (Y/N)');
-if(invention.toUpperCase() === 'N' || invention.toUpperCase() === 'NO'){
-    alert('Personally, I think the bicycle is the coolest. Mountain bikes, road bikes, motor bikes...perfectly designed fun');
-    counter++;
-}else{
-    alert('False. They\'re cool, but I think bicycles are cooler.');
+function questionCuatro(){
+    var invention = prompt('Computers are human\'s greatest invention. (Y/N)');
+    if(invention.toUpperCase() === 'N' || invention.toUpperCase() === 'NO'){
+        alert('Personally, I think the bicycle is the coolest. Mountain bikes, road bikes, motor bikes...perfectly designed fun');
+        counter++;
+    }else{
+        alert('False. They\'re cool, but I think bicycles are cooler.');
+    }
+    console.log('Answer4: ', invention);
 }
-console.log('Answer4: ', invention);
-
+questionCuatro();
 
 
 //QUESTION 5
-
-var music = prompt('My favorite type of music is rap. (Y/N)');
-if(music.toUpperCase() === 'N' || music.toUpperCase() === 'NO'){
-    alert('Correct. I like good old rock and roll.');
-    counter++;
-}else{
-    alert('Nope. Although I\'m coming around to the rap game.');
+function questionCinco(){
+    var music = prompt('My favorite type of music is rap. (Y/N)');
+    if(music.toUpperCase() === 'N' || music.toUpperCase() === 'NO'){
+        alert('Correct. I like good old rock and roll.');
+        counter++;
+    }else{
+        alert('Nope. Although I\'m coming around to the rap game.');
+    }
+    console.log('Answer5: ', music);
+    console.log('You answered ' + counter + ' out of 5 questions correctly!');
 }
-console.log('Answer5: ', music);
-console.log('You answered ' + counter + ' out of 5 questions correctly!');
-
-
+questionCinco();
 
 //QUESTION 6 - Guess a number with only 4 chances
 
