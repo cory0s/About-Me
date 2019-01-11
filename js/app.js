@@ -5,14 +5,19 @@ alert('Guess answers to the following questions to learn a little more about me!
 var counter = 0;
 
 //QUESTION 1
-var birthPlace = prompt('I was born in Seattle, WA (Y/N)');
-if(birthPlace.toUpperCase() === 'N' || birthPlace.toUpperCase() === 'NO'){
-    alert('Correct! I was born in Seoul, South Korea.');
-    counter++;
-} else {
-    alert('Incorrect. I was born in Seoul, South Korea.');
+function questionUno(){
+    var birthPlace = prompt('I was born in Seattle, WA (Y/N)');
+    
+    if(birthPlace.toUpperCase() === 'N' || birthPlace.toUpperCase() === 'NO'){
+        alert('Correct! I was born in Seoul, South Korea.');
+        counter++;
+    } else {
+        alert('Incorrect. I was born in Seoul, South Korea.');
+    }
+    console.log('Answer1: ', birthPlace);
 }
-console.log('Answer1: ', birthPlace);
+questionUno();
+
 
 //QUESTION 2
 var roomMates = prompt('I live with 15 animals (Y/N)');
