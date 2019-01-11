@@ -20,26 +20,35 @@ questionUno();
 
 
 //QUESTION 2
-var roomMates = prompt('I live with 15 animals (Y/N)');
-if(roomMates.toUpperCase() === 'Y' || roomMates.toUpperCase() === 'YES'){
-    alert('Correct! 1 dog, 8 chickens, and 6 humans!');
-    counter++;
-} else {
-    alert('Wrong. I live in an animal house and I love it');
+function questionDos(){
+    var roomMates = prompt('I live with 15 animals (Y/N)');
+    if(roomMates.toUpperCase() === 'Y' || roomMates.toUpperCase() === 'YES'){
+        alert('Correct! 1 dog, 8 chickens, and 6 humans!');
+        counter++;
+    } else {
+        alert('Wrong. I live in an animal house and I love it');
+    }
+    console.log('Answer2: ', roomMates);
 }
-console.log('Answer2: ', roomMates);
+questionDos();
+
 
 //QUESTION 3
-var food = prompt('Pineapple makes everything better. (Y/N)');
-if(food.toUpperCase() === 'Y' || food.toUpperCase() === 'YES'){
-    alert('Agreed, how else would you make the perfect pizza, burger, or tacos?');
-    counter++;
-}else{
-    alert('Wrong. I don\'t think we can be friends');
+function questionTres(){
+    var food = prompt('Pineapple makes everything better. (Y/N)');
+    if(food.toUpperCase() === 'Y' || food.toUpperCase() === 'YES'){
+        alert('Agreed, how else would you make the perfect pizza, burger, or tacos?');
+        counter++;
+    }else{
+        alert('Wrong. I don\'t think we can be friends');
+    }
+    console.log('Answer3: ', food);
 }
-console.log('Answer3: ', food);
+questionTres();
+
 
 //QUESTION 4
+
 var invention = prompt('Computers are human\'s greatest invention. (Y/N)');
 if(invention.toUpperCase() === 'N' || invention.toUpperCase() === 'NO'){
     alert('Personally, I think the bicycle is the coolest. Mountain bikes, road bikes, motor bikes...perfectly designed fun');
@@ -49,7 +58,10 @@ if(invention.toUpperCase() === 'N' || invention.toUpperCase() === 'NO'){
 }
 console.log('Answer4: ', invention);
 
+
+
 //QUESTION 5
+
 var music = prompt('My favorite type of music is rap. (Y/N)');
 if(music.toUpperCase() === 'N' || music.toUpperCase() === 'NO'){
     alert('Correct. I like good old rock and roll.');
@@ -61,7 +73,9 @@ console.log('Answer5: ', music);
 console.log('You answered ' + counter + ' out of 5 questions correctly!');
 
 
+
 //QUESTION 6 - Guess a number with only 4 chances
+
 var guessCounter = 0;
 var answer = 12;
 
@@ -85,7 +99,9 @@ for(var i=0; i<4; i++){
     }
 }
 
+
 //QUESTION 7 - Guess a correct answer from an array of correct answers within 6 tries
+
 var placesLived = ['tuscon', 'paris', 'madrid', 'seoul', 'richland'];
 var guessCounter = 0;
 var continueGuessing = true;
