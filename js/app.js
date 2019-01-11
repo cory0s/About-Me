@@ -77,57 +77,63 @@ questionCinco();
 
 //QUESTION 6 - Guess a number with only 4 chances
 
-var guessCounter = 0;
-var answer = 12;
+function questionSeis(){
+    var guessCounter = 0;
+    var answer = 12;
 
-for(var i=0; i<4; i++){
-    guessCounter++;
-    var remainingGuesses = 4-guessCounter;
-    var guessNumber = prompt('Guess how many years I\'ve lived in Seattle');
+    for(var i=0; i<4; i++){
+        guessCounter++;
+        var remainingGuesses = 4-guessCounter;
+        var guessNumber = prompt('Guess how many years I\'ve lived in Seattle');
 
-    if(parseInt(guessNumber) === answer && guessCounter === 1){
-        alert('Congrats! You answered correctly on your first try!');
-        break;
-    }else if(parseInt(guessNumber) === answer){
-        alert('Correct! You guessed correctly in ' + guessCounter + ' guesses!');
-        break;
-    }else if(parseInt(guessNumber) > answer){
-        alert('Your guess was too high. You have ' + remainingGuesses + ' guesses left.');
-    }else if(parseInt(guessNumber) < answer && remainingGuesses === 0){ 
-        alert('Your guess was too low.  You have no remaining guesses. The correct answer was ' + answer +'.');
-    }else{
-        alert('Your guess was too low. You have ' + remainingGuesses + ' guesses left.');
+        if(parseInt(guessNumber) === answer && guessCounter === 1){
+            alert('Congrats! You answered correctly on your first try!');
+            break;
+        }else if(parseInt(guessNumber) === answer){
+            alert('Correct! You guessed correctly in ' + guessCounter + ' guesses!');
+            break;
+        }else if(parseInt(guessNumber) > answer){
+            alert('Your guess was too high. You have ' + remainingGuesses + ' guesses left.');
+        }else if(parseInt(guessNumber) < answer && remainingGuesses === 0){ 
+            alert('Your guess was too low.  You have no remaining guesses. The correct answer was ' + answer +'.');
+        }else{
+            alert('Your guess was too low. You have ' + remainingGuesses + ' guesses left.');
+        }
     }
 }
+questionSeis();
 
 
 //QUESTION 7 - Guess a correct answer from an array of correct answers within 6 tries
 
-var placesLived = ['tuscon', 'paris', 'madrid', 'seoul', 'richland'];
-var guessCounter = 0;
-var continueGuessing = true;
-var incorrectGuess = false;
+function questionSiete(){
+    var placesLived = ['tuscon', 'paris', 'madrid', 'seoul', 'richland'];
+    var guessCounter = 0;
+    var continueGuessing = true;
+    var incorrectGuess = false;
 
-for(var i=0; i<6; i++){
-    guessCounter++;
-    var remainingGuesses = 6-guessCounter;
+    for(var i=0; i<6; i++){
+        guessCounter++;
+        var remainingGuesses = 6-guessCounter;
 
-    if(remainingGuesses > 0 && continueGuessing === true){
-        if(incorrectGuess === true){
-            alert('Nope, I haven\'t lived there. You have ' + remainingGuesses + ' guesses left.');
-        }
-
-        var guessCity = prompt('Guess one city I\'ve lived in other than Seattle');
-        for(var j=0; j < placesLived.length; j++){
-            if(placesLived[j] === guessCity.toLowerCase()){
-                alert('Correct! You guessed correctly in ' + guessCounter + ' guesses!');
-                var continueGuessing = false;
+        if(remainingGuesses > 0 && continueGuessing === true){
+            if(incorrectGuess === true){
+                alert('Nope, I haven\'t lived there. You have ' + remainingGuesses + ' guesses left.');
             }
-        }
-        incorrectGuess = true;
-    }
 
-    if(remainingGuesses === 0){
-        alert('You\'re out of guesses! Correct answers were: ' + placesLived);
-    }
-}     
+            var guessCity = prompt('Guess one city I\'ve lived in other than Seattle');
+            for(var j=0; j < placesLived.length; j++){
+                if(placesLived[j] === guessCity.toLowerCase()){
+                    alert('Correct! You guessed correctly in ' + guessCounter + ' guesses!');
+                    var continueGuessing = false;
+                }
+            }
+            incorrectGuess = true;
+        }
+
+        if(remainingGuesses === 0){
+            alert('You\'re out of guesses! Correct answers were: ' + placesLived);
+        }
+    } 
+}
+questionSiete();    
