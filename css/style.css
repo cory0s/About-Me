@@ -10,6 +10,7 @@ p{
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     color: orange;
+    margin: 10px;
 }
 
 /* css comment */
@@ -19,10 +20,12 @@ h1{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+
 ul{
     width: 80%;
     text-align: center;
     margin: 0px auto 0px auto;
+    color: orange;
 }
 
 li{
@@ -43,8 +46,9 @@ body{
 h2{
     color: orange;
     font-size: 25px;
-    text-align: center;
+    text-align: left;
     vertical-align: bottom;
+    text-decoration: underline;
 }
 
 nav{
